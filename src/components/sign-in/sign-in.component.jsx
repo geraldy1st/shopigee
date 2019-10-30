@@ -17,14 +17,14 @@ class SignIn extends React.Component {
     };
   }
 
-  handleSubmit = e => {
-    e.preventDefault();
+  handleSubmit = event => {
+    event.preventDefault();
 
     this.setState({ email: '', password: '' });
   };
 
-  handleChange = e => {
-    const { value, name } = e.target;
+  handleChange = event => {
+    const { value, name } = event.target;
 
     this.setState({ [name]: value });
   };
